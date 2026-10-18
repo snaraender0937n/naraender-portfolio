@@ -732,6 +732,27 @@ button {
     margin-bottom: 24px;
 }
 
+.card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-blue);
+}
+
+.card-text {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 .card-highlights {
     display: flex;
     flex-direction: column;
