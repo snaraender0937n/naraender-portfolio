@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naraender S. | Engineering Portfolio</title>
+    <meta name="description" content="Engineering portfolio of Naraender S. featuring hardware design, power electronics, embedded systems, industrial monitoring, and risk analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#hero" class="site-logo" aria-label="Naraender S. Portfolio Home">
+                <span class="logo-name">NARAENDER S.</span>
+                <span class="logo-tag">ENGINEERING</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#approach" class="nav-link">Approach</a></li>
+                    <li><a href="#education-experience" class="nav-link">Education &amp; Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Electrical &amp; Electronics Engineering Portfolio</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Building verifiable engineering systems across <span class="highlight">hardware</span> and <span class="highlight">software</span>.
+                </h1>
+
+                <p class="hero-description">
+                    I am an Electrical &amp; Electronics Engineering student working at the intersection of circuit design, power electronics, embedded firmware, edge signal processing, and distributed software architectures.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="heroProjectsBtn">
+                        <span>View Projects</span>
+                        <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M3.333 8h9.334M8 3.333L12.667 8 8 12.667" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/snaraender0937n" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" id="heroGithubBtn">
+                        <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        <span>GitHub Profile</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/snaraender0937n" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer" id="heroLinkedinBtn">
+                        <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 01.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-value">6</span>
+                        <span class="stat-label">Published Engineering Repositories</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Domain Organizations (Hardware &amp; Software)</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Industrial Field Internships (TANGEDCO &amp; Ultramax)</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Degree Programs (VIT Chennai &amp; IIT Madras)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">Engineering Focus &amp; Practical Principles</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I approach engineering problems by working from fundamental physical circuits upward to high-level software abstractions. Rather than treating hardware as an uninspected black box or software as isolated from physical constraints, my work focuses on building verifiable, well-characterized systems where every layer is analyzed, documented, and tested against its operating boundaries.
+                        </p>
+                        <p>
+                            My engineering scope covers schematic capture and PCB layout in KiCad, switched-mode power electronics, analog signal generation, embedded microcontroller firmware for ARM Cortex-M and ESP32 architectures, deterministic wireless telemetry, frequency-domain vibration signal processing, and defensive software systems.
+                        </p>
+                        <p>
+                            Across all projects, I maintain strict engineering honesty: distinguishing mathematical derivations and simulation results from physical bench measurements, and documenting toolchain constraints and unverified operational limits rather than presenting speculative features as production-ready.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="focus-card">
+                            <div class="focus-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                    <rect x="9" y="9" width="6" height="6"/>
+                                    <line x1="9" y1="1" x2="9" y2="4"/>
+                                    <line x1="15" y1="1" x2="15" y2="4"/>
+                                    <line x1="9" y1="20" x2="9" y2="23"/>
+                                    <line x1="15" y1="20" x2="15" y2="23"/>
+                                    <line x1="20" y1="9" x2="23" y2="9"/>
+                                    <line x1="20" y1="14" x2="23" y2="14"/>
+                                    <line x1="1" y1="9" x2="4" y2="9"/>
+                                    <line x1="1" y1="14" x2="4" y2="14"/>
+                                </svg>
+                            </div>
+                            <h3>Hardware &amp; Circuit Systems</h3>
+                            <p>Schematic capture, multi-rail PCB layouts, power stage calculations, switching topology analysis, and laboratory bench characterization.</p>
+                        </div>
+
+                        <div class="focus-card">
+                            <div class="focus-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+                                </svg>
+                            </div>
+                            <h3>Embedded Control &amp; Telemetry</h3>
+                            <p>Deterministic firmware on STM32, ESP32, and AVR; peripheral bus interfaces (I2C, SPI, UART); wireless protocols (ESP-NOW, BLE, MQTT); and telemetry pipelines.</p>
+                        </div>
+
+                        <div class="focus-card">
+                            <div class="focus-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <h3>Signal Processing &amp; Software</h3>
+                            <p>Time-domain statistical features, FFT spectral analysis, non-parametric anomaly detection, telemetry ingestion backends, and defensive risk scoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="section-title">Technical Competencies</h2>
+                    <p class="section-subtitle">Verified tools, languages, and methodologies supported directly by my published engineering repositories and academic coursework.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Hardware & PCB Design -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"/>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"/>
+                                </svg>
+                            </div>
+                            <h3>Hardware &amp; PCB Design</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>KiCad 8 (Schematic &amp; PCB)</li>
+                            <li>2-Layer PCB Layout</li>
+                            <li>Through-Hole &amp; SMD Routing</li>
+                            <li>Gerber &amp; Drill Output Generation</li>
+                            <li>BOM Structuring</li>
+                            <li>Ferric Chloride (FeCl3) Wet Etching</li>
+                            <li>Electrical Rule Checking (ERC)</li>
+                            <li>Design Rule Checking (DRC)</li>
+                            <li>Benchtop Multimeter &amp; Scope Testing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Power & Analog Electronics -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </div>
+                            <h3>Power Electronics &amp; Analog Circuits</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>DC-DC Buck Converter Topology</li>
+                            <li>Power MOSFET Gate Driving (TLP350)</li>
+                            <li>IRLZ44N Switching Stages</li>
+                            <li>Linear Regulators (LM7805 / LM7812 / LM7912)</li>
+                            <li>Operational Amplifiers (uA741)</li>
+                            <li>Wien Bridge Resonant Oscillators</li>
+                            <li>Analog Comparators</li>
+                            <li>Ripple &amp; Conduction Loss Audits</li>
+                            <li>Tinkercad &amp; Circuit Simulation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Embedded Systems & Microcontrollers -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                    <path d="M9 9h6v6H9z"/>
+                                </svg>
+                            </div>
+                            <h3>Embedded Systems &amp; Controllers</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>STM32F446RE (ARM Cortex-M4)</li>
+                            <li>ESP32-WROOM-32 &amp; ESP32-S3</li>
+                            <li>Seeed Studio XIAO ESP32-C3 (RISC-V)</li>
+                            <li>ATmega328P (Arduino Uno / Nano)</li>
+                            <li>Microchip ATtiny85-20S</li>
+                            <li>Arduino CLI Toolchain</li>
+                            <li>STM32CubeIDE / STM32 HAL</li>
+                            <li>Timer Fast PWM &amp; Interrupt Handling</li>
+                            <li>L298N Dual H-Bridge Motor Control</li>
+                        </ul>
+                    </div>
+
+                    <!-- Protocols & Industrial Automation -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                                </svg>
+                            </div>
+                            <h3>Protocols &amp; Industrial Systems</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>UART / Serial CDC (115200 / 9600 Baud)</li>
+                            <li>I2C (PCF8574, OLED SSD1306, Sensors)</li>
+                            <li>SPI &amp; 1-Wire (DS18B20)</li>
+                            <li>ESP-NOW 2.4 GHz Packed RF Structs</li>
+                            <li>BLE 4.2 / 5.0 (NimBLE GAP/GATT HID)</li>
+                            <li>MQTT Telemetry (Mosquitto Broker)</li>
+                            <li>LTE Cat-1 &amp; GNSS AT Commands (SIM7670G)</li>
+                            <li>PLC Ladder Programming &amp; HMI (Internship)</li>
+                            <li>Substation SCADA &amp; Protection Relays (TANGEDCO)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Programming & Backend Systems -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </div>
+                            <h3>Programming &amp; Software Systems</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>C (C99) &amp; C++ (C++17)</li>
+                            <li>Python 3 &amp; FastAPI / Flask</li>
+                            <li>TypeScript &amp; Node.js 20 (Express)</li>
+                            <li>Next.js 14 App Router &amp; React</li>
+                            <li>Prisma ORM &amp; SQLite</li>
+                            <li>Socket.IO Real-Time Streaming</li>
+                            <li>HTML5, Vanilla CSS, Modern JavaScript</li>
+                            <li>REST API Design &amp; RFC 4180 CSV Parsers</li>
+                            <li>Git &amp; GitHub Version Control</li>
+                        </ul>
+                    </div>
+
+                    <!-- Signal Processing & Analytics -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                            </div>
+                            <h3>Signal Processing &amp; Risk Analytics</h3>
+                        </div>
+                        <ul class="skill-tags">
+                            <li>Discrete Fourier Transform (DFT / FFT)</li>
+                            <li>Radix-2 Cooley-Tukey Algorithm</li>
+                            <li>Hann Spectral Windowing</li>
+                            <li>Vibration Statistics (RMS, Peak, Crest Factor)</li>
+                            <li>Kurtosis Impulsive Impact Detection</li>
+                            <li>Non-Parametric Median &amp; MAD Anomaly Detection</li>
+                            <li>Passive Client Behavioral Biometrics</li>
+                            <li>SHA-256 Hardware Environment Fingerprinting</li>
+                            <li>Mathematical Derivation &amp; Verification Scripts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Engineering Projects</h2>
+                    <p class="section-subtitle">Six comprehensive engineering projects organized by physical hardware and software/analytics domains. Descriptions, technologies, and limitations are directly verified against repository source code.</p>
+                </div>
+
+                <!-- Domain A: Hardware & Embedded Systems -->
+                <div class="project-domain-block">
+                    <div class="domain-header">
+                        <span class="domain-badge hardware-badge">Hardware &amp; Embedded Systems</span>
+                        <h3 class="domain-title">Circuit Design, Power Systems, Embedded Control &amp; Telemetry</h3>
+                        <p class="domain-description">Physical hardware prototyping, schematic capture, switched-mode conversion, microcontroller firmware, and wireless sensor integration.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project 1: PCB Design & Manufacturing Engineering -->
+                        <article class="project-card" id="project-pcb">
+                            <div class="card-top">
+                                <span class="card-domain">Hardware Engineering</span>
+                                <span class="card-status verified">KiCad &amp; Physical Prototyping</span>
+                            </div>
+                            <h4 class="card-title">PCB Design &amp; Manufacturing Engineering</h4>
+                            <p class="card-summary">
+                                Four hardware case studies documenting schematic capture, 2-layer PCB layout, component selection, circuit calculations, and laboratory fabrication methods using KiCad 8.
+                            </p>
+                            <div class="card-body">
+                                <div class="card-highlights">
+                                    <div class="highlight-item">
+                                        <strong>Case Study 1:</strong> 5V 1.5A Regulated Linear Power Supply on single-sided 1.6 mm FR4 with LM7805, 1N4007 bridge rectifier, and electrolytic filtering.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Case Study 2:</strong> Triple-output (+5V, +12V, -12V) surface-mount linear power supply in a 33.5 x 30.0 mm 2-layer layout using TO-252 (DPAK) regulators.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Case Study 3:</strong> Standalone ATtiny85-20S USB development dongle with PCB edge connector contacts and 3.6V Zener level clamping.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Case Study 4:</strong> Manual single-sided bench prototype fabricated using Ferric Chloride (FeCl3) chemical wet etching with recorded multimeter readings.
+                                    </div>
+                                </div>
+                                <div class="card-limitations">
+                                    <strong>Audit &amp; Limitations Notice:</strong> An audit identified a schematic power-rail short on the SMD board; manufacturing Gerbers are quarantined, and a preliminary Revision A schematic draft is documented. Native ERC/DRC and drill files for THT and USB boards remain pending.
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="tech-stack">
+                                    <span>KiCad 8</span>
+                                    <span>2-Layer PCB</span>
+                                    <span>LM7805</span>
+                                    <span>ATtiny85</span>
+                                    <span>FeCl3 Etching</span>
+                                    <span>Gerbers</span>
+                                    <span>BOM</span>
+                                </div>
+                                <a href="https://github.com/NaraenderHardware/pcb-design-manufacturing-engineering" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View PCB Design &amp; Manufacturing Engineering repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Project 2: Power Electronics & Analog Circuit Engineering -->
+                        <article class="project-card" id="project-power">
+                            <div class="card-top">
+                                <span class="card-domain">Power &amp; Analog Electronics</span>
+                                <span class="card-status verified">Circuit Calculations &amp; Bench Testing</span>
+                            </div>
+                            <h4 class="card-title">Power Electronics &amp; Analog Circuit Engineering</h4>
+                            <p class="card-summary">
+                                Design, mathematical modeling, simulation, and physical bench characterization of switched-mode power electronics and active multi-stage analog circuits.
+                            </p>
+                            <div class="card-body">
+                                <div class="card-highlights">
+                                    <div class="highlight-item">
+                                        <strong>DC-DC Buck Converter (36V to 18V, 24W):</strong> High-side N-MOSFET step-down switched regulator using IRLZ44N power MOSFET and TLP350 optocoupled gate driver.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Precision PWM Generation:</strong> ATmega328P Timer1 fast PWM configured in hardware registers (WGM14, ICR1=319, OCR1A=160) synthesizing an exact 50.000 kHz, 50.00% duty cycle signal.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Analog Function Generator:</strong> Multi-waveform generator delivering sine (1.441 kHz Wien Bridge resonant tank), square (comparator), and triangle waveforms using five uA741 operational amplifiers.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Dual Regulated Supply:</strong> Mains transformer conversion to +/-12V dual rails via LM7812 and LM7912 linear regulators for analog op-amp bias.
+                                    </div>
+                                </div>
+                                <div class="card-limitations">
+                                    <strong>Audit &amp; Limitations Notice:</strong> Buck converter operates in open-loop mode without active ADC voltage feedback; full-load conduction droop to 17.17V is calculated mathematically rather than measured under continuous 1.33A load. Function generator exhibits minor rail clipping due to lack of AGC.
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="tech-stack">
+                                    <span>IRLZ44N MOSFET</span>
+                                    <span>TLP350 Gate Driver</span>
+                                    <span>ATmega328P Timer1</span>
+                                    <span>50 kHz PWM</span>
+                                    <span>uA741 Op-Amps</span>
+                                    <span>Wien Bridge</span>
+                                    <span>Python Scripts</span>
+                                </div>
+                                <a href="https://github.com/NaraenderHardware/power-electronics-analog-circuit-engineering" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Power Electronics &amp; Analog Circuit Engineering repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Project 3: Embedded Control, Automation & Robotics -->
+                        <article class="project-card" id="project-robotics">
+                            <div class="card-top">
+                                <span class="card-domain">Embedded Systems &amp; Robotics</span>
+                                <span class="card-status verified">Multi-Target Firmware &amp; Test Suite</span>
+                            </div>
+                            <h4 class="card-title">Embedded Control, Automation &amp; Robotics</h4>
+                            <p class="card-summary">
+                                Six embedded engineering case studies spanning industrial motor automation, digital logic synthesis, closed-loop environmental control, and wireless robotics.
+                            </p>
+                            <div class="card-body">
+                                <div class="card-highlights">
+                                    <div class="highlight-item">
+                                        <strong>Smart Motor Control:</strong> Dual-microcontroller system with STM32F446RE (ARM Cortex-M4 @ 84 MHz) motor controller linked to ESP32 SoftAP gateway over 115200 8N1 UART.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>ESP32 BLE RC Car:</strong> Dual ESP32 NimBLE architecture featuring a custom wireless gamepad controller driving differential chassis motors via L298N H-bridge (5 kHz PWM).
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Autonomous Plant Watering:</strong> Closed-loop analog soil moisture monitoring with Arduino Uno and optoisolated submersible water pump relay control.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Ultrasonic Radar &amp; Logic Counter:</strong> 180-degree polar scanner (HC-SR04, SG90 servo, Processing GUI) and CD4516 CMOS / 74LS TTL digital upcounter with 1 Hz clock.
+                                    </div>
+                                </div>
+                                <div class="card-limitations">
+                                    <strong>Audit &amp; Limitations Notice:</strong> 9 Arduino and ESP32 firmware targets pass automated compilation audits via arduino-cli; STM32 firmware was not compiled natively due to host ARM GCC toolchain absence; physical hardware validation was not conducted during software audit.
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="tech-stack">
+                                    <span>STM32F446RE</span>
+                                    <span>ESP32-WROOM-32</span>
+                                    <span>Arduino Uno/Nano</span>
+                                    <span>BLE (NimBLE)</span>
+                                    <span>UART / I2C</span>
+                                    <span>CD4516 CMOS</span>
+                                    <span>Python Test Runner</span>
+                                </div>
+                                <a href="https://github.com/NaraenderHardware/embedded-control-automation-robotics" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Embedded Control, Automation &amp; Robotics repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Project 4: VitalEdge Embedded Telemetry Monitoring -->
+                        <article class="project-card" id="project-vitaledge">
+                            <div class="card-top">
+                                <span class="card-domain">IoT &amp; Telemetry Systems</span>
+                                <span class="card-status verified">Electronica India Tech Challenge 2026</span>
+                            </div>
+                            <h4 class="card-title">VitalEdge Embedded Telemetry Monitoring</h4>
+                            <p class="card-summary">
+                                Edge-first embedded engineering prototype collecting and transmitting synchronized physiological, inertial, thermal, environmental, and spatial telemetry across a dual-microcontroller architecture.
+                            </p>
+                            <div class="card-body">
+                                <div class="card-highlights">
+                                    <div class="highlight-item">
+                                        <strong>Wearable Edge Node:</strong> Seeed Studio XIAO ESP32-C3 (RISC-V 32-bit @ 160 MHz) interfacing with MAX30102 (HR/SpO2), MPU6050 (6-axis IMU), DS18B20 (1-Wire temp), AD8232 (ECG), and PMS5003 (particulate matter).
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Communications Gateway:</strong> ESP32-S3 receiving 56-byte packed binary structs over 2.4 GHz ESP-NOW broadcast (1 Hz rate), connected to SIM7670G LTE Cat-1 cellular modem and GNSS.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Multi-Stream Telemetry Ingestion:</strong> Python FastAPI telemetry backend paired with React/Vite live monitoring dashboard and zero-dependency offline browser demonstration.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Hardware Emergency Mechanism:</strong> Mechanical active-low SOS button with immediate hardware-coupled piezo alarm and prioritized high-severity telemetry flag.
+                                    </div>
+                                </div>
+                                <div class="card-limitations">
+                                    <strong>Documented Prototype Disclaimers:</strong> Educational and engineering research prototype; not an FDA/CE clinically certified medical device. The single-file HTML console and wearable demo mode utilize a synthetic mathematical P-Q-R-S-T ECG model rather than clinical sensor recordings.
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="tech-stack">
+                                    <span>XIAO ESP32-C3</span>
+                                    <span>ESP32-S3</span>
+                                    <span>ESP-NOW (2.4 GHz)</span>
+                                    <span>LTE Cat-1 / GNSS</span>
+                                    <span>MAX30102</span>
+                                    <span>FastAPI</span>
+                                    <span>React / Vite</span>
+                                </div>
+                                <a href="https://github.com/NaraenderHardware/vitaledge-embedded-telemetry-monitoring" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View VitalEdge Embedded Telemetry Monitoring repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Domain B: Software & Analytics Systems -->
+                <div class="project-domain-block">
+                    <div class="domain-header">
+                        <span class="domain-badge software-badge">Software &amp; Analytics Systems</span>
+                        <h3 class="domain-title">Condition Monitoring, Signal Processing &amp; Risk Analytics</h3>
+                        <p class="domain-description">Distributed telemetry ingestion, frequency-domain vibration decomposition, non-parametric anomaly detection, and passive behavioral fraud analysis.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project 5: Industrial Fleet Condition Monitoring -->
+                        <article class="project-card" id="project-fleet">
+                            <div class="card-top">
+                                <span class="card-domain">Industrial Software &amp; DSP</span>
+                                <span class="card-status verified">Dual Execution Architecture</span>
+                            </div>
+                            <h4 class="card-title">Industrial Fleet Condition Monitoring</h4>
+                            <p class="card-summary">
+                                End-to-end software platform for real-time equipment telemetry ingestion, frequency-domain vibration analysis, adaptive non-parametric anomaly detection, and regional conflict coordination.
+                            </p>
+                            <div class="card-body">
+                                <div class="card-highlights">
+                                    <div class="highlight-item">
+                                        <strong>Edge Vibration Signal Processing:</strong> Time-domain extraction (Peak, RMS, Crest Factor, Kurtosis) and Radix-2 Cooley-Tukey FFT with symmetric Hann windowing for spectral leak mitigation.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Adaptive Non-Parametric Detection:</strong> Rolling dual-window Median and Median Absolute Deviation (MAD) baseline classifying 5 fault modes (spike, drift, flatline, oscillation, sensor_swap).
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Regional Conflict Coordination:</strong> 60-second rolling concurrency matrix correlating multi-device anomalies within geographic clusters to identify site-wide disturbances.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Dual Execution Architecture:</strong> Node.js 20 / TypeScript REST API, Prisma ORM (SQLite / PostgreSQL), Next.js 14 dashboard, plus a standalone zero-dependency HTML browser console.
+                                    </div>
+                                </div>
+                                <div class="card-limitations">
+                                    <strong>Documented Limitations:</strong> Telemetry data and sample CSVs are synthetic simulations for algorithmic demonstration. The native C99 agent, C++17 vibration agent, and Python ML service have documented toolchain verification constraints and remain unverified on local host environments without specific Docker setups.
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="tech-stack">
+                                    <span>TypeScript</span>
+                                    <span>Node.js / Express</span>
+                                    <span>Next.js 14</span>
+                                    <span>Prisma (SQLite/Postgres)</span>
+                                    <span>Radix-2 FFT</span>
+                                    <span>Median / MAD</span>
+                                    <span>Socket.IO</span>
+                                </div>
+                                <a href="https://github.com/NaraenderSoftware/industrial-fleet-condition-monitoring" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Industrial Fleet Condition Monitoring repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Project 6: Behavioral Fraud Detection and Risk Analytics -->
+                        <article class="project-card" id="project-fraud">
+                            <div class="card-top">
+                                <span class="card-domain">Cybersecurity &amp; Risk Intelligence</span>
+                                <span class="card-status verified">Multi-Layer Scoring Pipeline</span>
+                            </div>
+                            <h4 class="card-title">Behavioral Fraud Detection &amp; Risk Analytics (FraudGuard)</h4>
+                            <p class="card-summary">
+                                Prototype defensive system mitigating multi-account abuse, promotional credit harvesting, and automated signup attacks in zero-payment onboarding tiers.
+                            </p>
+                            <div class="card-body">
+                                <div class="card-highlights">
+                                    <div class="highlight-item">
+                                        <strong>Passive Behavioral Biometrics:</strong> Non-intrusive client telemetry tracking form completion duration, mouse cursor movement counts, clipboard paste operations, and tab focus changes.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Device &amp; Network Intelligence:</strong> Deterministic SHA-256 hardware environment fingerprinting, disposable email domain filtering, alias normalization, and 5-minute IP velocity sliding windows.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>Multi-Layer Score Fusion:</strong> Weighted fusion combining deterministic rules (60%), behavioral biometrics (25%), and anomaly scoring (15%), plus compound correlation bonuses.
+                                    </div>
+                                    <div class="highlight-item">
+                                        <strong>5-Tier Graduated Decision Engine:</strong> Maps composite risk scores to ALLOW (0-29), MONITOR (30-49), CHALLENGE (50-69 with stepped-up verification), REVIEW (70-84), and BLOCK (85-100).
+                                    </div>
+                                </div>
+                                <div class="card-limitations">
+                                    <strong>Documented Limitations:</strong> Evaluated as an engineering prototype with simulated attack telemetry. Heuristic risk scores, unverified live PostgreSQL connection, and unverified Isolation Forest model execution must not be represented as fully validated production capabilities (local runs fall back to SQLite and statistical heuristics).
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="tech-stack">
+                                    <span>Python / Flask</span>
+                                    <span>React / Vite</span>
+                                    <span>SQLite</span>
+                                    <span>SHA-256 Fingerprinting</span>
+                                    <span>Behavioral Telemetry</span>
+                                    <span>Graph Clustering</span>
+                                    <span>Risk Scoring</span>
+                                </div>
+                                <a href="https://github.com/NaraenderSoftware/behavioral-fraud-detection-risk-analytics" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="View Behavioral Fraud Detection and Risk Analytics repository on GitHub">
+                                    <span>Repository</span>
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Approach Section -->
+        <section id="approach" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Methodology</span>
+                    <h2 class="section-title">Practical Engineering Workflow</h2>
+                    <p class="section-subtitle">A disciplined approach to system design, validation, and transparent technical documentation across physical hardware and software.</p>
+                </div>
+
+                <div class="workflow-grid">
+                    <div class="workflow-step">
+                        <div class="step-number">01</div>
+                        <h3>Mathematical Calculations &amp; Modeling</h3>
+                        <p>Deriving circuit parameters (duty cycle, ripple currents, resonant tank tuning, power dissipation) and algorithmic formulas before hardware layout or code execution.</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">02</div>
+                        <h3>Schematic Capture &amp; Simulation</h3>
+                        <p>Constructing hierarchical schematics in KiCad, running virtual simulations in Tinkercad or SPICE, and performing electrical rule checks prior to physical layout.</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">03</div>
+                        <h3>Physical Layout &amp; Fabrication</h3>
+                        <p>Designing single and 2-layer PCBs with clearance audits, generating standardized Gerbers/BOMs, or executing manual FeCl3 chemical etching for rapid bench prototyping.</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">04</div>
+                        <h3>Firmware Architecture &amp; Protocols</h3>
+                        <p>Developing embedded C/C++ firmware with hardware register configuration (timers, ADC, interrupts), non-blocking execution loops, and robust communication buses (I2C, SPI, UART, BLE, ESP-NOW).</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">05</div>
+                        <h3>Signal Processing &amp; Software Backends</h3>
+                        <p>Implementing mathematical signal transforms (FFT, Hann windowing, statistical moments) and designing decoupled REST/WebSocket backends with clean data validation.</p>
+                    </div>
+
+                    <div class="workflow-step">
+                        <div class="step-number">06</div>
+                        <h3>Verification Audits &amp; Limitations Disclosure</h3>
+                        <p>Writing automated test suites (Python, Arduino CLI), documenting toolchain constraints, identifying failure modes, and clearly separating simulated prototypes from production systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience Section -->
+        <section id="education-experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Background</span>
+                    <h2 class="section-title">Education &amp; Industrial Experience</h2>
+                    <p class="section-subtitle">Verified academic qualifications and industrial internship records supported by institutional documentation.</p>
+                </div>
+
+                <div class="dual-column-layout">
+                    <!-- Education Column -->
+                    <div class="column-block">
+                        <h3 class="column-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                            <span>Academic Education</span>
+                        </h3>
+
+                        <div class="timeline-list">
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">2024 – Present</span>
+                                    <span class="timeline-badge">CGPA: 9.15</span>
+                                </div>
+                                <h4 class="timeline-heading">B.Tech — Electrical &amp; Electronics Engineering</h4>
+                                <div class="timeline-institution">Vellore Institute of Technology (VIT), Chennai</div>
+                                <p class="timeline-details">
+                                    Core curriculum covering analog &amp; digital circuits, power electronics, signals &amp; systems, electrical machines, microprocessors &amp; microcontrollers, control systems, and power systems engineering.
+                                </p>
+                            </div>
+
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">Degree Program</span>
+                                    <span class="timeline-badge">CGPA: 7.92</span>
+                                </div>
+                                <h4 class="timeline-heading">BS — Electronics Systems</h4>
+                                <div class="timeline-institution">Indian Institute of Technology Madras (IIT Madras)</div>
+                                <p class="timeline-details">
+                                    Rigorous foundational program focusing on electronics system design, embedded hardware architecture, semiconductor devices, digital systems, and mathematical computation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Column -->
+                    <div class="column-block">
+                        <h3 class="column-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                            </svg>
+                            <span>Industrial Experience</span>
+                        </h3>
+
+                        <div class="timeline-list">
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">May – June 2026</span>
+                                    <span class="timeline-badge">Internship</span>
+                                </div>
+                                <h4 class="timeline-heading">Electrical Engineering Intern</h4>
+                                <div class="timeline-institution">TANGEDCO / TANTRANSCO</div>
+                                <p class="timeline-details">
+                                    Industrial exposure to high-voltage electrical power transmission and distribution infrastructure. Studied substation architecture, SCADA operations, protection systems, power transformers, CT/PT instrument transformers, SF6 / vacuum circuit breakers, busbar topologies, and numerical protection relays.
+                                </p>
+                            </div>
+
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="timeline-period">June 2026</span>
+                                    <span class="timeline-badge">Internship</span>
+                                </div>
+                                <h4 class="timeline-heading">Electrical &amp; Automation Intern</h4>
+                                <div class="timeline-institution">Ultramax Hydrojet Pvt. Ltd.</div>
+                                <p class="timeline-details">
+                                    Hands-on industrial engineering exposure in an automated manufacturing environment. Practical work with programmable logic controllers (PLC ladder logic), human-machine interfaces (HMI), industrial control panel wiring, power distribution switchgear, variable frequency drives (VFD), and sensor integration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizations & Repositories Section -->
+        <section id="organizations" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Organizations</span>
+                    <h2 class="section-title">GitHub Organizations &amp; Project Distribution</h2>
+                    <p class="section-subtitle">Engineering repositories are organized into specialized domains on GitHub for structured maintenance and open-source availability.</p>
+                </div>
+
+                <div class="org-grid">
+                    <div class="org-card">
+                        <div class="org-header">
+                            <div class="org-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>NaraenderHardware</h3>
+                                <span class="org-subtitle">Hardware &amp; Embedded Systems</span>
+                            </div>
+                        </div>
+                        <p>Focuses on PCB design, power conversion electronics, analog signal generators, embedded microcontroller firmware, and wireless sensor telemetry.</p>
+                        <div class="org-links">
+                            <a href="https://github.com/NaraenderHardware" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <span>Visit Organization</span>
+                                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="org-card">
+                        <div class="org-header">
+                            <div class="org-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>NaraenderSoftware</h3>
+                                <span class="org-subtitle">Software &amp; Analytics Systems</span>
+                            </div>
+                        </div>
+                        <p>Focuses on distributed industrial telemetry coordination, vibration signal analysis (FFT), non-parametric anomaly detection, and defensive fraud risk analytics.</p>
+                        <div class="org-links">
+                            <a href="https://github.com/NaraenderSoftware" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                                <span>Visit Organization</span>
+                                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M12 4L4 12M12 4H6M12 4V10"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Connect &amp; Collaborate</h2>
+                    <p class="section-subtitle">Available for technical discussions regarding electronics engineering, embedded systems, power hardware, signal processing, and software development.</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-methods">
+                        <a href="https://github.com/snaraender0937n" class="contact-item" target="_blank" rel="noopener noreferrer" id="contactGithub">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/snaraender0937n</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/snaraender0937n" class="contact-item" target="_blank" rel="noopener noreferrer" id="contactLinkedin">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 01.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/snaraender0937n</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:snaraender@gmail.com" class="contact-item" id="contactEmail">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">snaraender@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">NARAENDER S.</div>
+                <p class="footer-tagline">Electrical &amp; Electronics Engineering Student</p>
+                <p class="footer-copy">&copy; <span id="currentYear">2026</span> Naraender S. All engineering portfolio repositories are licensed under the MIT License.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <span class="footer-heading">Organizations</span>
+                    <a href="https://github.com/NaraenderHardware" target="_blank" rel="noopener noreferrer">NaraenderHardware</a>
+                    <a href="https://github.com/NaraenderSoftware" target="_blank" rel="noopener noreferrer">NaraenderSoftware</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-heading">Profiles</span>
+                    <a href="https://github.com/snaraender0937n" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/snaraender0937n" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:snaraender@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
