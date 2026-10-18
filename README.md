@@ -11,7 +11,7 @@ The website presents verified engineering work across printed circuit board desi
 - **Technology Stack:** Clean semantic HTML5, Vanilla CSS3 (custom design system), and lightweight JavaScript.
 - **Dependency-Free:** No build steps, bundlers, external CSS frameworks, or runtime dependencies.
 - **Accessibility:** Conforms to WCAG 2.1 AA guidelines, featuring skip-to-content navigation, semantic landmarks, aria attributes, visible `:focus-visible` outlines, and responsive keyboard controls.
-- **Styling:** Technical slate/dark design system with high-contrast typography (Inter and JetBrains Mono), balanced grid spacing, and responsive layouts for desktop, tablet, and mobile displays.
+- **Styling:** Engineering-oriented dark design system featuring a deep charcoal canvas, graphite surfaces, warm off-white typography, and muted copper accents, with high-contrast typography (Inter and JetBrains Mono), crisp technical alignment, and responsive layouts for desktop, tablet, and mobile displays.
 - **Content Integrity:** Zero emojis, no exaggerated claims, and transparent disclosure of documented engineering limitations and prototype scopes.
 
 ---
@@ -21,7 +21,7 @@ The website presents verified engineering work across printed circuit board desi
 ```text
 naraender-portfolio-main/
 ├── index.html        # Main HTML5 entrypoint with complete semantic section layout
-├── style.css         # Custom responsive stylesheet and dark design tokens
+├── style.css         # Custom responsive stylesheet (Dark Charcoal, Graphite & Muted Copper)
 ├── script.js         # Accessible mobile menu toggle, scroll spy, and year helper
 └── README.md         # Repository and project documentation
 ```

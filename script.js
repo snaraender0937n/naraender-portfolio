@@ -21,11 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuToggle && primaryNav) {
         const toggleMenu = (open) => {
-            const isOpen = open !== undefined ? open : menuToggle.getAttribute('aria-expanded') === 'true';
-            const nextState = !isOpen;
+            const shouldOpen = open !== undefined ? open : (menuToggle.getAttribute('aria-expanded') !== 'true');
 
-            menuToggle.setAttribute('aria-expanded', String(nextState));
-            if (nextState) {
+            menuToggle.setAttribute('aria-expanded', String(shouldOpen));
+            if (shouldOpen) {
                 primaryNav.classList.add('nav-open');
                 document.body.style.overflow = 'hidden';
             } else {
